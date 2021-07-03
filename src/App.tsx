@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header/Header';
+import HomePage from './components/HomePage/HomePage';
+import { neonifyContainer } from './utils/neon-utils';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export interface AppProps {
+
 }
+
+const App: React.FunctionComponent<AppProps> = () => {
+  return (<>
+    <div style={{
+      margin: 24,
+      padding: 16,
+      minHeight: 'calc(100vh - 88px)',
+      border: '4px solid #fff',
+      borderRadius: 4,
+      boxShadow: neonifyContainer('#ff3864'),
+    }}>
+      <Header />
+      <HomePage />
+    </div>
+  </>);
+};
 
 export default App;
