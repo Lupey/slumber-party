@@ -9,7 +9,7 @@ export interface SignupProps {
 const styles = {
   inputContainer: {
     // boxShadow: neonifyContainer('#791e94'),
-    boxShadow: neonifyContainer('#fd3777'),
+    boxShadow: neonifyContainer('#541388'),
     border: '3px solid white',
     borderRadius: 3,
     display: 'flex',
@@ -36,7 +36,7 @@ const styles = {
     fontSize: '20px',
     padding: '8px',
     border: '2px solid white',
-    boxShadow: neonifyContainer('#541388'),
+    boxShadow: neonifyContainer('#5268c5'),
   },
 };
 

@@ -45,13 +45,13 @@ const Users: React.FunctionComponent<UsersProps> = ({ userList, userInfo }) => {
         <li style={styles.li}>
           <div style={styles.userContainer}>
             <span>
-              {user.name}
+              {`${user.name} ${user.id === userInfo.id ? '(me)' : ''}`}
             </span>
             <span>
               {user.state === UserState.AWAKE ? 'Awake' : 'Asleep'}
             </span>
           </div>
-          <hr style={styles.hr(user.id === userInfo.id ? '#f706cf' : '#2de2e6')} />
+          <hr style={styles.hr(user.state === UserState.AWAKE ? '#f9c80e' : '#2de2e6')} />
         </li>
       ))}
     </ul>
