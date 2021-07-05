@@ -49,7 +49,7 @@ const Signup: React.FunctionComponent<SignupProps> = ({ updateUserInfo }) => {
 
   const handleJoin = async () => {
     const id = await addUser(name);
-    window.sessionStorage.setItem('id', id);
+    window.localStorage.setItem('id', id);
     updateUserInfo(id);
   };
 

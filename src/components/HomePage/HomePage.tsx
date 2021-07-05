@@ -18,7 +18,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = () => {
 
     if (!user) {
       // Remove useless id since the server couldn't find it
-      window.sessionStorage.removeItem('id');
+      window.localStorage.removeItem('id');
     }
 
     setUserInfo(user);
@@ -32,7 +32,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = () => {
   React.useEffect(() => {
     fetchUserList();
 
-    const id = window.sessionStorage.getItem('id');
+    const id = window.localStorage.getItem('id');
     if (id) {
       fetchUserInfo(id);
     }
