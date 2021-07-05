@@ -31,7 +31,7 @@ const updateUser = (id: string, state: UserState) => {
 const getFullUserList = () => {
   const users: User[] = db.get(USERS_KEY).value();
 
-  return users.map(({ name, state }) => ({ name, state }));
+  return users.map(({ id, name, state }) => ({ id, name, state }));
 };
 
 const deleteUser = (id: string) => {

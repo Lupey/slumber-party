@@ -17,3 +17,11 @@ export const neonifyContainer = (glowColor: string) => {
     0 0 2.8rem ${glowColor},
     inset 0 0 1.3rem ${glowColor}`;
 };
+
+export const neonifyHr = (glowColor: string) => {
+  return `0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem ${glowColor},
+    0 0 0.8rem ${glowColor},
+    0 0 2.8rem ${glowColor}`;
+};
