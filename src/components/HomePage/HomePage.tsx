@@ -37,9 +37,9 @@ const HomePage: React.FunctionComponent<HomePageProps> = () => {
       fetchUserInfo(id);
     }
 
-    setInterval(() => {
-      fetchUserList();
-    }, 10 * 1000);
+    // setInterval(() => {
+    //   fetchUserList();
+    // }, 10 * 1000);
   }, []);
 
   React.useEffect(() => {
